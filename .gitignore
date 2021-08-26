@@ -1,0 +1,7 @@
+.DS_Store
+*.log
+.idea/
+lib
+node_modules
+test.html
+/**/npmignore

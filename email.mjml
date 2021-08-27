@@ -1,15 +1,30 @@
 <mjml lang="en">
+
   <!-- <mj-include> = include external css -->
   <mj-include path="./styles.css" type="css" css-inline="inline" />
-
   <!-- <mj-head> = import fonts, define default styles or create classes for MJML components, etc. -->
   <mj-head>
+    <mj-title>Quelques nouvelles de mjml-text.com</mj-title>
+    <!-- <mj-head> = will be displayed in the inbox of the recipient -->
+    <mj-preview>Des nouvelles de nous</mj-preview>
     <mj-attributes>
+      <!-- <mj-breakpoint> = control on which breakpoint the layout should go desktop/mobile  -->
+      <mj-breakpoint width="480px" />
       <mj-text padding="0" />
       <mj-class name="blue" color="blue" />
       <mj-class name="bigFont" font-size="28px" />
       <mj-all font-family="Arial" />
+      <!-- <mj-font> = import fonts  -->
+      <mj-font name="Raleway"
+         href="https://fonts.googleapis.com/css?family=Raleway" />
     </mj-attributes>
+      <!-- <mj-style> = will be applied to the HTML in your MJML document as well as the HTML outputted  -->
+      <mj-style>
+        .red-text div {
+          color: red !important;
+          text-decoration: underline !important;
+        }
+    </mj-style>
   </mj-head>
 
 <!-- <mj-body> = <body> note: background color white is specified in styles.css -->
@@ -17,10 +32,8 @@
 
   <!-- <mj-section> = full-width row of content (main blocks) -->
     <mj-section vertical-align="middle" padding-bottom="0px">
-
       <!-- <mj-include> = include external html files -->
       <mj-include align="center" path="./html_components/upper-header.html" type="html" />
-
     </mj-section>
 
     <mj-section padding-bottom="0px">
@@ -32,29 +45,34 @@
         <mj-text font-family="Helvetica,Arial,sans-serif" line-height="120%" text-decoration="underline" align="left">NEWS<br />MARCH 2016</mj-text>
       </mj-column>
     </mj-section>
+
     <mj-section background-color="#000001">
       <mj-column>
         <mj-text padding-top="0px" padding-bottom="0px" color="#FFFFFE" font-family="Helvetica,Arial,sans-serif" font-size="14px" line-height="120%">Dear {firstname}, <br /><br /> You used to follow rhythm, now rhythm follows you, everywhere you go!<br /> Discover iSpark, the mobile transposition of our renowned beat-making solution Spark.</mj-text>
       </mj-column>
     </mj-section>
+
     <mj-section>
       <mj-column background-color="#FFFFFE">
         <mj-image padding-bottom="0px" padding-top="0px" padding-left="0px" padding-right="0px" src="https://www.arturia.com/images/newsletters/2016-02-ispark/05.jpg" href="https://www.arturia.com/products/ipad-synths/ispark/overview" alt=""></mj-image>
         <mj-text padding-top="25px" padding-bottom="25px" font-family="Helvetica,Arial,sans-serif" font-size="14px" line-height="120%">iSpark is a powerful mobile production tool allowing you to create and play rhythmic tracks, complex grooves and even complete songs. Its sonic strike force comes along with an unwavering workflow and a real flexibility.</mj-text>
       </mj-column>
     </mj-section>
+
     <mj-section>
       <mj-column background-color="#FFFFFE">
         <mj-image padding-bottom="0px" padding-top="0px" padding-left="0px" padding-right="0px" src="https://www.arturia.com/images/newsletters/2016-02-ispark/06.jpg" href="https://www.arturia.com/products/ipad-synths/ispark/overview" alt=""></mj-image>
         <mj-text padding-top="25px" padding-bottom="25px" font-family="Helvetica,Arial,sans-serif" font-size="14px" line-height="120%">Check out the iSpark introduction movie shot during the Arturia Experience event at the ADE featuring the Dutch beatmaker FilosofischeStilte.</mj-text>
       </mj-column>
     </mj-section>
+
     <mj-section>
       <mj-column background-color="#FFFFFE">
         <mj-image padding-bottom="0px" padding-top="0px" padding-left="0px" padding-right="0px" src="https://www.arturia.com/images/newsletters/2016-02-ispark/07.jpg" href="https://www.arturia.com/products/ipad-synths/ispark/details" alt=""></mj-image>
         <mj-text padding-top="25px" padding-bottom="25px" font-family="Helvetica,Arial,sans-serif" font-size="14px" line-height="120%">Follow Mauricio Garcia, Arturia Product Specialist, presenting you the many clever features of iSpark in this series of tutorials.</mj-text>
       </mj-column>
     </mj-section>
+
     <mj-section>
       <mj-column background-color="#FFFFFE">
         <mj-image padding-bottom="0px" padding-top="0px" padding-left="0px" padding-right="0px" src="https://www.arturia.com/images/newsletters/2016-02-ispark/08.jpg" href="https://www.arturia.com/products/ipad-synths/ispark/details" alt=""></mj-image>
@@ -62,11 +80,13 @@
         <mj-button background-color="#2DDCB4" padding-bottom="25px" border-radius="8px" href="https://www.arturia.com/products/ipad-synths/ispark/overview" font-size="14px" font-family="Helvetica,Arial,sans-serif" line-height="120%">Learn more about iSpark</mj-button>
       </mj-column>
     </mj-section>
+
     <mj-section background-color="#000001">
       <mj-column>
         <mj-text color="#FFFFFE" font-family="Helvetica,Arial,sans-serif" font-size="14px">Musically yours,<br /> The Arturia Team</mj-text>
       </mj-column>
     </mj-section>
+
     <mj-section padding-left="0px" padding-right="0px" padding-top="0px" padding-bottom="0px">
       <mj-column>
         <mj-image width="86px" src="https://www.arturia.com/images/newsletters/2016-02-ispark/facebook_arturia.png" href="http://www.facebook.com/arturia2" alt=""></mj-image>
@@ -81,12 +101,14 @@
         <mj-image width="86px" src="https://www.arturia.com/images/newsletters/2016-02-ispark/twitter_arturia.png" href="http://twitter.com/arturiaofficial" alt=""></mj-image>
       </mj-column>
     </mj-section>
+
     <mj-section padding-top="0px" padding-bottom="0px">
       <mj-column>
         <mj-text font-family="Helvetica,Arial,sans-serif" padding-top="0px" align="center">See this email in your browser <a href="https://www.arturia.com/images/newsletters/2016-02-ispark/newsletter.html" style="text-decoration:none;color:#2DDCB4">here</a></mj-text>
         <mj-divider padding-left="0px" padding-right="0px"></mj-divider>
       </mj-column>
     </mj-section>
+    
     <mj-section padding-bottom="0px" padding-top="0px">
       <mj-column>
         <mj-text padding-bottom="0px" padding-top="0px" font-family="Helvetica,Arial,sans-serif" font-size="10px" line-height="12px">Your email address is on this list as a result of a subscription, information request, competition, or other correspondence you may have had with us in the past. If you would like to be removed from our list, check the email address this newsletter
@@ -96,5 +118,7 @@
         <mj-divider padding-left="0px" padding-right="0px"></mj-divider>
       </mj-column>
     </mj-section>
+
   </mj-body>
+
 </mjml>

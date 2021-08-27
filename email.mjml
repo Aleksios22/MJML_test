@@ -37,13 +37,16 @@
     </mj-section>
 
     <mj-section padding-bottom="0px">
-      <mj-column vertical-align="middle">
-        <mj-image width="144px" align="center" src="https://www.arturia.com/images/newsletters/2016-02-black/Logo-Baseline-0.15x.png" href="https://www.arturia.com" alt=""></mj-image>
-      </mj-column>
-      <mj-column></mj-column>
-      <mj-column>
-        <mj-text font-family="Helvetica,Arial,sans-serif" line-height="120%" text-decoration="underline" align="left">NEWS<br />MARCH 2016</mj-text>
-      </mj-column>
+        <!-- <mj-group> = prevent columns to stack horizontaly on breakpoint -->
+        <!-- <mj-group> -->
+        <mj-column vertical-align="middle">
+          <mj-image width="144px" align="center" src="https://www.arturia.com/images/newsletters/2016-02-black/Logo-Baseline-0.15x.png" href="https://www.arturia.com" alt=""></mj-image>
+        </mj-column>
+        <mj-column></mj-column>
+        <mj-column>
+          <mj-text font-family="Helvetica,Arial,sans-serif" line-height="120%" text-decoration="underline" align="left">NEWS<br />MARCH 2016</mj-text>
+        </mj-column>
+      <!-- </mj-group> -->
     </mj-section>
 
     <mj-section background-color="#000001">

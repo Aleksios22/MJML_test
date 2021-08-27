@@ -18,7 +18,7 @@ MJML is responsive by design on most-popular email clients, even Outlook. Write 
  * Write high-level code thanks to reusable and extensible components.
 
 # Live Preview and linter inside VScode :
-![](https://media.zeemly.com/media/product/mjml.png)
+![](https://raw.githubusercontent.com/Aleksios22/MJML_test/main/Assets/live_preview_inside_VSCode.png)
 
 ## Basic example of abstraction made by MJML's components :
 

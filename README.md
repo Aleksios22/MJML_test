@@ -1,31 +1,63 @@
 # MJML Tests
 ![](https://media.zeemly.com/media/product/mjml.png)
 
+## MJML's website 
+https://mjml.io/
+
+## My test online preview:
+https://mjml-exploration.netlify.app/
 
 
-## What is it
+
+## Claims of the framework :
 
 MJML is responsive by design on most-popular email clients, even Outlook. Write less code, save time and code more efficiently with MJML’s semantic syntax.
 
+ * Write less code, save time and code more efficiently with MJML’s semantic syntax.
+ * MJML is responsive by design on most-popular email clients, even Outlook.
+ * Write high-level code thanks to reusable and extensible components.
 
 
 
-## Basic example of the structure
+
+## Basic example of abstraction made by MJML's components :
 
 ```html
-<mjml>
-  <mj-body>
-    <mj-section>
-      <mj-column>
+<!-- MJML -->
+<mj-button href="#">
+    Hello There!
+</mj-button>
 
-        <mj-image width="100px" src="/assets/img/logo-small.png"></mj-image>
+<!-- HTML -->
+<table cellpadding="0" cellspacing="0" 
+        style="border:none;
+        border-radius:3px;" 
+        align="center">
+    <tbody>
+        <tr>
+            <td style="background-color:#414141;
+            border-radius:3px;
+            color:#ffffff;     
+            cursor:auto;" 
+            align="center" 
+            valign="middle" 
+            bgcolor="#414141">
+                <a class="mj-content" href="#" 
+                  style="display:inline-block;
+                  text-decoration:none;
+                  background-color:#414141;
+                  border:1px solid #414141;
+                  border-radius:3px;
+                  color:#ffffff;
+                  font-size:13px;
+                  font-weight:bold;
+                  padding:15px 30px;" 
+                  target="_blank">
+                    Hello There!
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-        <mj-divider border-color="#F45E43"></mj-divider>
-
-        <mj-text font-size="20px" color="#F45E43" font-family="helvetica">Hello World</mj-text>
-
-      </mj-column>
-    </mj-section>
-  </mj-body>
-</mjml>
 ```

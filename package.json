@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mjml": "^4.10.2",
+    "phantomjs-prebuilt": "^2.1.16"
+  }
+}

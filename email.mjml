@@ -1,7 +1,17 @@
 <mjml lang="en">
   <!-- <mj-include> = include external css -->
   <mj-include path="./styles.css" type="css" css-inline="inline" />
-  
+
+  <!-- <mj-head> = import fonts, define default styles or create classes for MJML components, etc. -->
+  <mj-head>
+    <mj-attributes>
+      <mj-text padding="0" />
+      <mj-class name="blue" color="blue" />
+      <mj-class name="bigFont" font-size="28px" />
+      <mj-all font-family="Arial" />
+    </mj-attributes>
+  </mj-head>
+
 <!-- <mj-body> = <body> note: background color white is specified in styles.css -->
   <mj-body width="600px">
 

@@ -1,6 +1,19 @@
-<mjml>
-  <mj-body background-color="#F2F2F2">
+<mjml lang="en">
+  <!-- <mj-include> = include external css -->
+  <mj-include path="./styles.css" type="css" css-inline="inline" />
+  
+<!-- <mj-body> = <body> note: background color white is specified in styles.css -->
+  <mj-body width="600px">
+
+  <!-- <mj-section> = full-width row of content (main blocks) -->
     <mj-section vertical-align="middle" padding-bottom="0px">
+
+      <!-- <mj-include> = include external html files -->
+      <mj-include align="center" path="./html_components/upper-header.html" type="html" />
+
+    </mj-section>
+
+    <mj-section padding-bottom="0px">
       <mj-column vertical-align="middle">
         <mj-image width="144px" align="center" src="https://www.arturia.com/images/newsletters/2016-02-black/Logo-Baseline-0.15x.png" href="https://www.arturia.com" alt=""></mj-image>
       </mj-column>
